@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for the services slider */
+.services-slider {
+  padding: 0.5rem 0;
+}
+
+.services-slider .slick-list {
+  padding: 1rem 0 !important;
+  margin: 0 -4px;
+  overflow: hidden !important;
+}
+
+@media (min-width: 768px) {
+  .services-slider {
+    padding: 1rem 0;
+  }
+  
+  .services-slider .slick-list {
+    padding: 1.5rem 0 !important;
+    margin: 0 -8px;
+  }
+}
+
+.services-slider .slick-track {
+  display: flex !important;
+  gap: 0;
+  padding: 0.25rem 0;
+}
+
+@media (min-width: 768px) {
+  .services-slider .slick-track {
+    padding: 0.5rem 0;
+  }
+}
+
+.services-slider .slick-slide {
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.services-slider .slick-slide.slick-active {
+  opacity: 1;
+}
+
+.services-slider .slick-slide > div {
+  height: 100%;
+}
+
+/* Center active slide */
+.services-slider .slick-slide.slick-center {
+  opacity: 1;
+  z-index: 10;
+}
+
+/* Hide scrollbar */
+.services-slider {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.services-slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .services-slider .slick-slide {
+    padding: 0 12px;
+  }
+}
+
+/* Optional: Fade out non-active slides */
+.services-slider .slick-slide:not(.slick-center) {
+  opacity: 0.7;
+}
+
+/* Optional: Add smooth transitions */
+.services-slider .slick-slide > div {
+  transition: all 0.3s ease;
+}
+
