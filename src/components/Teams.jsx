@@ -91,7 +91,7 @@ const Teams = () => {
   ];
 
   return (
-    <section className="py-16 px-4 md:px-8 lg:px-16 bg-[#0B0B0F] text-white overflow-hidden">
+    <section className="py-8 px-4 md:px-8 lg:px-16 bg-[#0B0B0F] text-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header (unchanged) */}
         <motion.div
@@ -155,7 +155,7 @@ const Teams = () => {
             disableOnInteraction: false,
           }}
           modules={[EffectCoverflow, Pagination, Autoplay]}
-          className="w-full py-12"
+          className="w-full py-4"
         >
           {teamMembers.map((member) => (
             <SwiperSlide key={member.id} className="w-[240px] sm:w-[280px]">
@@ -166,7 +166,7 @@ const Teams = () => {
               >
                 <div className="relative bg-gradient-to-br from-[#1E2A4A]/80 to-[#0B0B0F]/90 rounded-2xl overflow-hidden shadow-xl border border-purple-900/20 backdrop-blur-sm">
                   {/* Image Container */}
-                  <div className="relative h-[260px] overflow-hidden">
+                  <div className="relative h-[230px] overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent z-10" />
                     <img
                       src={member.image}
@@ -237,7 +237,7 @@ const Teams = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mt-16 text-center"
+          className=" text-center"
         >
           <motion.button
             whileHover={{ scale: 1.05 }}
