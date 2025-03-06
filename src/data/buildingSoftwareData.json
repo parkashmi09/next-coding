@@ -1,0 +1,56 @@
+{
+  "sections": [
+    {
+      "id": 1,
+      "title": "Way of building",
+      "subtitle": "Great Software",
+      "features": [
+        {
+          "id": 1,
+          "title": "Build the right team to scale",
+          "description": "NextCod.ing delivers customized development solutions with a skilled team and end-to-end support, ensuring high quality and cost-effectiveness.",
+          "highlightText": "Our delivery model",
+          "highlightLink": "#",
+          "additionalText": "helps you cut costs and deliver within budget.",
+          "testimonial": {
+            "quote": "NextCod.ing delivered exceptional quality and efficiency, perfectly aligning with our needs. Their attention to detail set them apart.",
+            "author": "Nisan Dalki",
+            "role": "CEO",
+            "image": "/images/ceo.png"
+          },
+          "image": "/images/first.png",
+          "imagePosition": "right"
+        },
+        {
+          "id": 2,
+          "title": "Quality Assurance",
+          "description": "NextCod.ing stands out for its personalized development approach, combining expert knowledge with cutting-edge technology to drive your business forward.",
+          "additionalText": "NextCod.ing delivers top-notch quality with precision and industry-leading standards.",
+          "testimonial": {
+            "quote": "NextCod.ing provided innovative and cost-effective solutions, helping us meet our goals on time and within budget.",
+            "author": "Priya Jain",
+            "role": "Jain Agro",
+                "image": "/images/ceo.png"
+          },
+          "image": "/images/second.png",
+          "imagePosition": "left"
+        },
+        {
+          "id": 3,
+          "title": "Build with Standards",
+          "description": "With a commitment to leveraging cutting-edge technology, NextCod.ing provides innovative solutions that drive your business forward. Our proven track record and attention to detail set us apart in the industry.",
+          "additionalText": "delivers precise, high-quality solutions with unwavering reliability and support.",
+          "testimonial": {
+            "quote": "NextCod.ing's high-quality work and seamless communication made our project a success.",
+            "author": "Dr Vaibhav Chavan",
+            "role": "CEO",
+            "organization": "Axon Hospitals",
+            "image": "/images/ceo.png"
+          },
+          "image": "/images/third.png",
+          "imagePosition": "right"
+        }
+      ]
+    }
+  ]
+}

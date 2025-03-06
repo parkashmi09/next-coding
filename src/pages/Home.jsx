@@ -4,6 +4,10 @@ import TrustedCompanies from '../components/TrustedCompanies';
 import CompanyLogos from '../components/CompanyLogos';
 import ClientTestimonials from '../components/ClientTestimonials';
 import RecentProjects from '../components/RecentProjects';
+import BuildingSoftware from '../components/BuildingSoftware';
+import DevelopmentApproach from '../components/Development';
+import TechStack from '../components/OurStack';
+import Teams from '../components/Teams';
 
 const Home = () => {
   return (
@@ -14,6 +18,10 @@ const Home = () => {
       <CompanyLogos />
       <ClientTestimonials/>
       <RecentProjects/>
+      <Teams/>
+      <BuildingSoftware/>
+      <DevelopmentApproach/>
+      <TechStack/>
     </>
   );
 };

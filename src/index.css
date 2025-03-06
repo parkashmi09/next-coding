@@ -82,3 +82,87 @@
   transition: all 0.3s ease;
 }
 
+/* Custom Swiper Navigation and Pagination Styles */
+.swiper-button-prev,
+.swiper-button-next {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.3s ease-in-out;
+}
+
+.swiper:hover .swiper-button-prev,
+.swiper:hover .swiper-button-next {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  transform: scale(1.1) !important;
+}
+
+.swiper-pagination-bullet {
+  position: relative;
+  width: 12px !important;
+  height: 12px !important;
+  margin: 0 6px !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease-in-out !important;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgba(139, 92, 246, 0.3), rgba(236, 72, 153, 0.3));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.swiper-pagination-bullet:hover::before {
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  width: 32px !important;
+  border-radius: 10px !important;
+  background: linear-gradient(to right, #8B5CF6, #EC4899) !important;
+}
+
+.swiper-pagination-bullet-active::before {
+  opacity: 1;
+  border-radius: 12px;
+}
+
+/* styles.css */
+.gradient-underline {
+  position: relative;
+}
+
+.gradient-underline::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -4px;
+  width: 50%;
+  height: 2px;
+  background: linear-gradient(to right, #F76680 0%, #57007B 100%);
+  transition: all 0.3s ease;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #F76680 0%, #57007B 100%);
+  -webkit-background-clip: text; /* For Safari/Chrome */
+  background-clip: text;
+  color: transparent; /* Makes the text color transparent so the gradient shows through */
+  display: inline-block; /* Ensures the gradient applies correctly to the text */
+  transition: all 0.3s ease; /* Optional: Smooth transition for hover effects */
+}
+
+.gradient-underline:hover::after {
+  width: 70% !important;
+}
